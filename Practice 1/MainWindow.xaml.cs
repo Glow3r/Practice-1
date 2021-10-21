@@ -28,7 +28,7 @@ namespace Practice_1
 
         private void Info_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Выполнил Гаврюшин К. А. ИСП-34", "О программе", MessageBoxButton.OK, MessageBoxImage.Information);
+            MessageBox.Show("Выполнил Гаврюшин К. А. ИСП-34", "О программе!", MessageBoxButton.OK, MessageBoxImage.Information);
         }
 
         private void Exit_Click(object sender, RoutedEventArgs e)
