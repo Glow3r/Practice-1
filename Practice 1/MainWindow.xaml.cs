@@ -38,9 +38,16 @@ namespace Practice_1
 
         private void Calculate_Click(object sender, RoutedEventArgs e)
         {
-            int integer = Convert.ToInt32(inputValue.Text);
-            var result = Calculation.SumEvenWithTuple(integer);
-            outputSum.Text = result.sum.ToString();
-            outputFull.Text = result.numbers;
+            try
+            {
+                int integer = Convert.ToInt32(inputValue.Text);
+                var result = Calculation.SumEvenWithTuple(integer);
+                outputSum.Text = result.sum.ToString();
+                outputFull.Text = result.numbers;
+            }
+            catch 
+            {
+                MessageBox.Show("Проверьете введенные данные!", "Ощибка");
+            }
     }   }
 }
